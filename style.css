@@ -1,0 +1,122 @@
+/* Variables */
+
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300;400;600;700&display=swap");
+
+:root {
+  --primaryColor: #ff0000;
+  --secondaryColor: #fdcb0a;
+  --darkColor: #000;
+  --mainTextColor: #fff;
+  --secondaryTextColor: (51 51 51);
+}
+
+/* Global */
+
+* {
+  font-family: "Exo", sans-serif;
+  line-height: 1.5em;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--mainTextColor);
+}
+
+body {
+  background-color: var(--darkColor);
+}
+
+/* Text */
+
+p,
+span,
+li {
+  color: var(--secondaryTextColor);
+  font-size: 1em;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: var(--secondaryColor);
+  font-weight: 400;
+}
+
+li {
+  line-height: 1.9em;
+}
+
+/* Hero Section */
+
+#container--main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.section--page {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#wrapper--hero {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+#bio,
+a {
+  font-weight: 300;
+}
+
+#name {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+#logo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#email {
+  color: var(--primaryColor);
+}
+
+#socials--list {
+  display: flex;
+  justify-content: center;
+  column-gap: 6em;
+  flex-wrap: wrap;
+}
+
+#socials--list a {
+  font-weight: 300;
+  color: var(--secondaryColor);
+  font-size: 0.9em;
+  transition: 0.3s;
+}
+
+#socials--list a:hover {
+  font-weight: 100;
+  color: var(--primaryColor);
+  font-size: 0.9em;
+}
+
+/* Tech Stack */
+
+#wrapper--techstack__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 0.9em;
+}
+
+.card--techstack {
+  border: 1px solid var(--primaryColor);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
